@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(1, '.')
+
 from readlif.reader import LifFile
 import numpy as np
 import napari
@@ -17,5 +20,5 @@ for z_nr in z_nr_list:
     
 with napari.gui_qt():
     viewer = napari.Viewer()
-    viewer.add_image(layers_c0, scale = (1,1,14),colormap='blue')
-    viewer.add_image(layers_c1, scale = (1,1,14),colormap='yellow')
+    viewer.add_image(layers_c0, scale = (1,1,14),colormap='blue', blending='additive')
+    viewer.add_image(layers_c1, scale = (1,1,14),colormap='yellow', blending='additive')
