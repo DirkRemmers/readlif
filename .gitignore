@@ -30,3 +30,6 @@ htmlcov
 
 #Ignore testing files that I don't have permission to share
 tests/private/*
+
+#Ignore test files since they are large
+test-files/*
