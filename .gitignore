@@ -32,4 +32,5 @@ htmlcov
 tests/private/*
 
 #Ignore test files since they are large
-test-files/*
+tests/lola.lif
+tests/navi_mosaic.lif
